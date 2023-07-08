@@ -1,0 +1,32 @@
+.productCon{
+    padding-bottom: 5%;
+}
+.proHd{
+    padding-top: 5%;
+    text-align: center;
+}
+.proRow{
+    padding-top: 5%;
+}
+.cardImg{
+    height: 325px;
+}
+.title{
+    color: black;
+}
+.title:hover{
+    text-decoration: none;
+    color: rgb(84, 84, 84);
+}
+.detailsCon{
+    height: 100vh;
+    padding-top: 8%;
+}
+.detailsImg{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.cardCol{
+    padding-top: 3%;
+}
