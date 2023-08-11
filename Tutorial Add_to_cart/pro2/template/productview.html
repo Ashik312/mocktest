@@ -1,0 +1,20 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block body_block %}
+<div class="container">
+    <div class="row">
+{% for i in k %}
+<div class="col-lg-7 pro">
+    <img src="{{i.product_img.url}}" alt="" width="100%" height="100%">
+</div>
+<div class="col-lg-5 mt-5">
+    <a href="{% url 'productview' i.id %}"><h3>Brand : {{i.product_name}}</h6></a>
+    <h4>price:{{i.product_price}}</h4>
+</div>
+{% endfor %}
+</div>
+</div>
+
+<a href="{% url 'home' %}">Home</a>
+<a href="{% url 'cart' %}">Cart</a>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'home.html' %}
+{% block body_block %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg">
+            <form method="POST">
+                {% csrf_token %}
+                <label for="">Name:</label><br>
+                <input type="text" name="username"><br><br>
+                <label for="">Password:</label><br>
+                <input type="text"  name="password"><br><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

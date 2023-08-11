@@ -1,0 +1,29 @@
+{% extends 'home.html' %}
+{% block body_block %}
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-lg">
+            <h1>Sign Up Page</h1>
+
+            <form method="post">
+                {% csrf_token %}
+                <label for="">Name:</label><br>
+                <input type="text" name="username"><br><br>
+
+                <label for="">Email:</label><br>
+                <input type="text" name="email"><br><br>
+
+                <label for="">Password:</label><br>
+                <input type="text" name="password"><br><br>
+
+                <label for="">Confirm Password:</label><br>
+                <input type="text" name="confpassword"><br><br>
+
+                <input type="submit">
+
+                <input type="reset">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

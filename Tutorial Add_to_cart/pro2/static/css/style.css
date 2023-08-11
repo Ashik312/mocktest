@@ -1,0 +1,105 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* .pro{
+    width: 13%;
+    border-radius: 20px;
+    min-width:250px;
+    padding: 10px 12px;
+      box-shadow: 20px 20px 30px rgba(145, 145, 141, 0.02);
+    cursor: pointer;
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+} */
+.pro_container .pro{
+  display: flex;
+  width: 23%;
+  min-width:250px;
+  
+  border-radius: 25px;
+  padding: 10px 12px;
+  margin: 15px 0;
+  box-shadow: 20px 20px 30px rgba(145, 141, 141, 0.02);
+  border: 2px solid rgb(128, 128, 128,0.1);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 10px;
+  transition: 0.1s;
+}
+
+.pro_container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+
+}
+
+
+#cart table{
+  width: 100%;
+  border-collapse:collapse;
+  table-layout: fixed;
+  white-space:nowrap;
+}
+
+#cart table img{
+  width: 70px;
+}
+#cart table td:nth-child(1){
+  width: 100px;
+  text-align: center;
+}
+#cart table td:nth-child(2){
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+} 
+
+#cart table td:nth-child(3){
+  width: 250px;
+  text-align: center;
+} 
+/* considering 3 td at a time because same width */
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+  width: 150px;
+  text-align: center;
+}
+#cart table td:nth-child(5) input{
+  width: 70px;
+  margin-top: 5px;
+  padding: 10px 5px 10px 15px;
+} 
+#cart table thead{
+  border: 1px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+#cart table thead td{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+#cart table thead tr td{
+  padding-top: 15px;
+}
+#cart table tbody td{
+  font-size: 14px;
+}
+
+
+.total{
+  text-align: right;
+}
+
